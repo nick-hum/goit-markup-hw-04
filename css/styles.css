@@ -63,6 +63,32 @@ img {
   display: flex;
 }
 
+.container.for-nav {
+  display: flex;
+  align-items: center;
+}
+
+.envelope::before {
+  content: '';
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+
+  background-image: url(../images/envelope.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.phone::before {
+  content: '';
+  width: 10px;
+  height: 15px;
+  margin-right: 10px;
+  background-image: url(../images/phone.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .site-nav .link {
   display: block;
   padding-top: 32px;
@@ -95,6 +121,7 @@ img {
 
 .nav-contacts {
   margin-left: auto;
+  display: flex;
 }
 
 .address-text:not(:last-child) {
@@ -102,6 +129,8 @@ img {
 }
 
 .address-text {
+  display: inline-flex;
+  align-items: center;
   color: var(--primary-text-color);
   text-decoration: none;
   font-weight: 500;
@@ -124,13 +153,22 @@ img {
   margin-right: auto;
   color: #ffffff;
   text-align: center;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url(../images/hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #000000;
 }
 
 .hero .hero-title {
   margin-top: 0px;
   margin-bottom: 30px;
-
-  background-color: #e5e5e5;
+  padding-top: 200px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -187,7 +225,6 @@ img {
 
 .list.advantages {
   display: flex;
-  background-color: #e5e5e5;
 }
 
 .adv-item {
@@ -196,6 +233,31 @@ img {
 
 .adv-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.adv-item::before {
+  content: '';
+  display: block;
+  height: 120px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4fa;
+}
+
+.antenna-icon::before {
+  background-image: url(../images/antenna1.svg);
+}
+
+.clock-icon::before {
+  background-image: url(../images/clock1.svg);
+}
+
+.laptop-icon::before {
+  background-image: url(../images/diagram1.svg);
+}
+
+.astro-icon::before {
+  background-image: url(../images/astronaut1.svg);
 }
 
 .advantages .advantages-list {
