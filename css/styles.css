@@ -322,7 +322,8 @@ img {
   color: #afb1b8;
 }
 
-.social-item__link:hover {
+.social-item__link:hover,
+.social-item__link:focus {
   background-color: var(--accent-color);
   border-radius: 50%;
   color: #ffffff;
@@ -348,7 +349,8 @@ img {
   border-radius: 4px;
 }
 
-.client-item:hover {
+.client-item:hover,
+.client-item:focus {
   border: 1px solid var(--accent-color);
 }
 
@@ -360,7 +362,8 @@ img {
   color: #afb1b8;
 }
 
-.client-link:hover {
+.client-link:hover,
+.client-link:focus {
   color: var(--accent-color);
 }
 
@@ -423,7 +426,8 @@ img {
   border-radius: 50%;
 }
 
-.join-item__link:hover {
+.join-item__link:hover,
+.join-item__link:focus {
   background-color: var(--accent-color);
 }
 
@@ -575,7 +579,8 @@ img {
   overflow: hidden;
 }
 
-.flex-item:hover {
+.flex-item:hover,
+.flex-item:focus {
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
     0px 1px 1px rgba(0, 0, 0, 0.12);
 }
